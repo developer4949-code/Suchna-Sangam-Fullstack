@@ -51,21 +51,19 @@
 
 ## 🧩 Project Structure
 
+```
 Suchna-Sangam-Fullstack/
 ├── suchna-sangam-backend/
-│ └── suchna-sangam-main/Suchnasangam-new-branch/
-│ └── src/main/resources/serviceAccountKey.json
+│   └── suchna-sangam-main/Suchnasangam-new-branch/
+│       └── src/main/resources/serviceAccountKey.json
 ├── suchna-sangam-frontend/
-│ └── Suchnasangam-main-frontend/
-│ ├── index.html
-│ ├── s_login.html, s_signup.html
-│ ├── b_.html, op_.html
-│ ├── about.html, random_git.html
-│ ├── *.css, *.js, assets/
-
-yaml
-Copy
-Edit
+│   └── Suchnasangam-main-frontend/
+│       ├── index.html
+│       ├── s_login.html, s_signup.html
+│       ├── b_.html, op_.html
+│       ├── about.html, random_git.html
+│       ├── *.css, *.js, assets/
+```
 
 ---
 
@@ -74,80 +72,86 @@ Edit
 ### 🔧 Backend Setup
 
 1. **Clone Repository:**
-   ```bash
-   git clone <your-backend-repo-url>
-Navigate to Backend Directory:
+```bash
+git clone <your-backend-repo-url>
+```
 
-bash
-Copy
-Edit
+2. **Navigate to Backend Directory:**
+```bash
 cd suchna-sangam-main/Suchnasangam-new-branch
-Add Firebase Service Account Key:
+```
 
-Place your serviceAccountKey.json inside:
+3. **Add Firebase Service Account Key:**
+Place your `serviceAccountKey.json` inside:
+```
 src/main/resources/
+```
 
-Run the App:
-
-bash
-Copy
-Edit
+4. **Run the App:**
+```bash
 ./gradlew bootRun
-🌐 Frontend Setup
-Clone Repository:
+```
 
-bash
-Copy
-Edit
+### 🌐 Frontend Setup
+
+1. **Clone Repository:**
+```bash
 git clone <your-frontend-repo-url>
-Open the App in Browser:
+```
 
+2. **Open the App in Browser:**
 Navigate to:
+```
 Suchnasangam-main-frontend/Suchnasangam-main/index.html
+```
 
-📡 API Endpoints (Backend)
-Endpoint	Method	Description
-/api/auth/signup	POST	User registration
-/api/auth/login	POST	User login
-/users/{userId}	GET	Get user details
-/news/{genre}	GET	Get news by genre
-/policies/{districtId}/history	GET	Fetch policy history
-/grievances/{districtId}	POST	Submit grievance
-/api/alerts/{districtName}	GET	Get district-level alerts
+---
 
-👨‍💻 Usage Guide
+## 📡 API Endpoints (Backend)
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| /api/auth/signup | POST | User registration |
+| /api/auth/login | POST | User login |
+| /users/{userId} | GET | Get user details |
+| /news/{genre} | GET | Get news by genre |
+| /policies/{districtId}/history | GET | Fetch policy history |
+| /grievances/{districtId} | POST | Submit grievance |
+| /api/alerts/{districtName} | GET | Get district-level alerts |
+
+---
+
+## 👨‍💻 Usage Guide
+
 Register/Login as either:
 
 🧑‍💼 Operator (submits grievances)
 
 🧑‍⚖️ Bureaucrat (views district grievances)
 
-Access:
+**Access:**
+- News, alerts, policies for your district.
+- Submit and track grievances.
 
-News, alerts, policies for your district.
+**Frontend Pages:**
+- `index.html`: Entry point
+- `s_login.html`, `s_signup.html`: Authentication
+- `b_*.html`: Bureaucrat dashboard
+- `op_*.html`: Operator dashboard
+- `about.html`: App information
 
-Submit and track grievances.
+---
 
-Frontend Pages:
+## 🤝 Contribution
 
-index.html: Entry point
-
-s_login.html, s_signup.html: Authentication
-
-b_*.html: Bureaucrat dashboard
-
-op_*.html: Operator dashboard
-
-about.html: App information
-
-🤝 Contribution
 Contributions are welcome!
 
-Fork the repositories
+- Fork the repositories
+- Create a new branch
+- Submit a pull request
 
-Create a new branch
+---
 
-Submit a pull request
+## 📄 License
 
-📄 License
 This project is licensed under the MIT License.
