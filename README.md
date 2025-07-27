@@ -1,4 +1,4 @@
-# 🌐 Suchna Sangam – Fullstack Project
+# 🌐 Suchna Sangam – A Fullstack Project
 
 **Suchna Sangam** is a full-stack application developed to bridge the digital divide in remote and underserved communities by delivering critical information and public services. The platform facilitates **news delivery**, **government policy access**, **grievance redressal**, and more through a clean, responsive frontend and a secure backend powered by Firebase and Spring Boot.
 
